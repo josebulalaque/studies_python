@@ -4,8 +4,8 @@ import os
 loop = True
 
 while loop:
-    num1 = int(input("Enter your first number: "))
-    num2 = int(input("Enter your second number: "))
+    num1 = float(input("Enter your first number: "))
+    num2 = float(input("Enter your second number: "))
     output = ""
 
 
@@ -17,15 +17,15 @@ while loop:
 
     if choice == "A" or choice == 'a':
         output=num1 + num2
-        print("Result:", output)
+        print(f"Result: {output:,.2f}")
         loop = False
     elif choice == "S" or choice == 's':
         output=num1 - num2
-        print("Result:", output)
+        print(f"Result: {output:,.2f}")
         loop = False
     elif choice == "M" or choice == 'm':
         output=num1 * num2
-        print("Result:", output)
+        print(f"Result: {output:,.2f}")
         loop = False
     elif choice == "D" or choice == 'd':
         output=num1 / num2
